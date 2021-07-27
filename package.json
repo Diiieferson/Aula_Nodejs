@@ -1,0 +1,22 @@
+{
+  "name": "pergunta-resposta-nodejs",
+  "version": "1.0.0",
+  "description": "pacote para testa o funcionamento do NPM",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diiieferson/Aula_Nodejs.git"
+  },
+  "author": "Dieferson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diiieferson/Aula_Nodejs/issues"
+  },
+  "homepage": "https://github.com/Diiieferson/Aula_Nodejs#readme",
+  "dependencies": {
+    "query-string": "^7.0.1"
+  }
+}
