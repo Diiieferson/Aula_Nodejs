@@ -7,10 +7,21 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
     const params = queryString.parse(url.parse(req.url, true).search);
-    console.log(params);
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  res.end('Hello World');
+    // console.log(params);
+
+    let resposta;
+    if (params.pergunta == 'melhor-filme'){
+        resposta = 'Star Wars';
+    }
+    else if (params.pergunta == 'melhor-tecnologia-backend'){
+        resposta = 'nodejs';
+    }else{
+        resposta = 'não sei desculpe';
+    }
+
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.end(params.resposta);
 });
 
 server.listen(port, hostname, () => {
